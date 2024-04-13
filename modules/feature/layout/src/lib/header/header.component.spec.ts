@@ -18,4 +18,10 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render title', () => {
+    const header: HTMLHeadElement =
+      fixture.nativeElement.querySelector('header');
+    expect(header.textContent).toBe('Clinica Veterinaria');
+  });
 });
