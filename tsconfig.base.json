@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@clinica-veterinaria-2/layout": ["modules/feature/layout/src/index.ts"],
+      "@clinica-veterinaria-2/owner-data-access": [
+        "modules/data-access/owner/src/index.ts"
+      ],
       "@clinica-veterinaria-2/patient-data-access": [
         "modules/data-access/patient/src/index.ts"
       ]
