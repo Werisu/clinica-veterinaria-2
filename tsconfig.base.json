@@ -19,6 +19,9 @@
       "@clinica-veterinaria-2/owner-data-access": [
         "modules/data-access/owner/src/index.ts"
       ],
+      "@clinica-veterinaria-2/owner-search": [
+        "modules/feature/owner/search/src/index.ts"
+      ],
       "@clinica-veterinaria-2/patient-data-access": [
         "modules/data-access/patient/src/index.ts"
       ]
