@@ -1,1 +1,18 @@
-<p>owner-search works!</p>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Busca cliente</mat-label>
+    <input
+      type="text"
+      placeholder="Buscar dono do paciente"
+      aria-label="Digite o nome do dono do paciente"
+      matInput
+      [formControl]="control"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+      @for (owner of owners; track owner) {
+      <mat-option [value]="owner.nome">{{ owner.nome }}</mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

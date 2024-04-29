@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { OwnerSearchComponent } from './owner-search.component';
 
 describe('OwnerSearchComponent', () => {
@@ -7,7 +8,7 @@ describe('OwnerSearchComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OwnerSearchComponent],
+      imports: [OwnerSearchComponent, NoopAnimationsModule],
     }).compileComponents();
 
     fixture = TestBed.createComponent(OwnerSearchComponent);
